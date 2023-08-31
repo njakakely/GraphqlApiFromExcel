@@ -15,14 +15,14 @@ url = "http://localhost:4000/api"
 
 query = '{ users { _id nom prenom }}'
 
-Set request = CreateObject("MSXML2.XMLHTTP.6.0")
-request.Open "POST", url, False
-request.setrequestheader "Content-Type", "application/json"
-request.send "{ ""query"": """ & query & """ }"
+Set request = CreateObject("MSXML2.XMLHTTP.6.0")<br>
+request.Open "POST", url, False<br>
+request.setrequestheader "Content-Type", "application/json"<br>
+request.send "{ ""query"": """ & query & """ }"<br>
 
-response = request.responseText
+response = request.responseText<br>
 
-MsgBox response
+MsgBox response<br>
 
 
 End Sub
